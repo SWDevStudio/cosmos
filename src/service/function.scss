@@ -1,0 +1,21 @@
+@function percent($widthBlock)
+{
+  $screenWidth: (1920 * 0.01);
+  $totalWidth: ($widthBlock / $screenWidth);
+  @return $totalWidth + vw;
+}
+
+
+@function auto-mm($width, $toWidth: 0){
+  @if ($toWidth != 0){
+    @return minmax($width + px, percent($toWidth));
+  }
+  @return minmax($width + px, percent($width));
+}
+
+
+@function rem($size){
+  $pixel: $size /14;
+  @return $pixel + rem;
+}
+

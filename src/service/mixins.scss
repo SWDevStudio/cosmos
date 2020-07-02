@@ -1,0 +1,14 @@
+@mixin mm-wh($width, $height: none) {
+  width: percent($width);
+  min-width: $width + px;
+  height: percent($height);
+  min-height: $height + px;
+}
+
+
+
+@mixin font($size, $color: $main-color) {
+  font-family: $main-font;
+  color: $color;
+  font-size: rem($size);
+}
