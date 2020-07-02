@@ -1,8 +1,8 @@
 // Подключение плагинов и библиотек
-import 'owl.carousel'
-import 'owl.carousel/dist/assets/owl.carousel.css';
+// import 'owl.carousel'
+// import 'owl.carousel/dist/assets/owl.carousel.css';
 
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function requireAll(requireContext) {
