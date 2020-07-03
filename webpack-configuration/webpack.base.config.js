@@ -93,10 +93,10 @@ let config  = {
                         loader: 'sass-resources-loader',
                         options: {
                             resources: [
-                                `${PATHS.src}/service/function.scss`,
-                                //`${PATHS.src}/service/global.scss`,
-                                `${PATHS.src}/service/mixins.scss`,
-                                `${PATHS.src}/service/variables.scss`,
+                                `${PATHS.src}/service/function.sass`,
+                                `${PATHS.src}/service/global.sass`,
+                                `${PATHS.src}/service/mixins.sass`,
+                                `${PATHS.src}/service/variables.sass`,
                             ],
 
                         }
