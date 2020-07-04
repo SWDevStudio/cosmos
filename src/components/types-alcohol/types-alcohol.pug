@@ -1,0 +1,77 @@
+include alcohol-item/alcohol-item
+mixin types-alcohol()
+    -
+        var images = [
+            {
+              title: 'Ликер',
+              img: 'baileys',
+              href: '#'
+            },
+            {
+                title: 'Джин',
+                img: 'bombay-saphire',
+                href: '#'
+            },
+            {
+                title: 'Шампанское',
+                img: 'canti-cuvee-dolce',
+                href: '#'
+            },
+            {
+                title: 'Ром',
+                img: 'captain-morgan-gold',
+                href: '#'
+            },
+            {
+                title: 'Вермут',
+                img: 'delasy-botanico',
+                href: '#'
+            },
+            {
+                title: 'Вино',
+                img: 'piquito-krasnoe-suhoe-075-l',
+                href: '#'
+            },
+            {
+                title: 'Водка',
+                img: 'russkiy-standart',
+                href: '#'
+            },
+            {
+                title: 'Текила',
+                img: 'sauza-silver',
+                href: '#'
+            },
+            {
+                title: 'Пиво',
+                img: 'spaten',
+                href: '#'
+            },
+            {
+                title: 'Виски',
+                img: 'white-horse-07',
+                href: '#'
+            },
+            {
+                title: 'Коньяк',
+                img: 'xennessi-vs-05l',
+                href: '#'
+            },
+            {
+                title: 'Нужное',
+                img: 'zakuski-soki',
+                href: '#'
+            },
+        ]
+
+    section.types-alcohol
+        .container
+            .row
+               - for (let item of images)
+                    +alcohol-item({
+                      title: item.title,
+                      img: 'img/' + item.img + '.png',
+                      href: item.href
+                    })
+
+
