@@ -1,0 +1,61 @@
+include list/list
+-
+    var firstColumn = [
+        {text: 'Главная', link: 'http://google.com'},
+        {text: 'Каталог', link: '#'},
+        {text: 'Доставка и оплата', link: '#'},
+        {text: 'О нас', link: '#'},
+        {text: 'Контакты', link: '#'},
+
+    ]
+    var secondColumn = [
+        {text: 'Виски', link: '#'},
+        {text: 'Водка', link: '#'},
+        {text: 'Пиво', link: '#'},
+        {text: 'Вино', link: '#'},
+        {text: 'Коньяк', link: '#'},
+    ]
+    var thirdColumn = [
+        {text: 'Ром', link: '#'},
+        {text: 'Шампанское', link: '#'},
+        {text: 'Вермут', link: '#'},
+        {text: 'Текила', link: '#'},
+        {text: 'Ликер', link: '#'},
+    ]
+
+footer#footer
+    .footer
+        .container
+            .row
+                .col-md-3
+                    +list({
+                      classes: 'footer__list text-center text-md-left',
+                      list: firstColumn
+                    })
+                .col-md-3
+                    +list({
+                      classes: 'footer__list text-center text-md-left',
+                      list: secondColumn
+                    })
+                .col-md-3
+                    +list({
+                      classes: 'footer__list text-center text-md-left',
+                      list: thirdColumn
+                    })
+                .col-md-3.text-center.text-md-left.footer__contacts
+                    p Night Spirits © 2020
+                    p Сервис доставки алкоголя в Москве
+                    p +7 (968) 393-43-33
+        .container.p-md-0.pb-md-3
+                .footer__rule.text-center.
+                    1 балл = 1 рубль. Минимальная сумма заказа 1500 руб, без учета доставки
+                .footer__info.text-justify.text-md-left.
+                    NightSpirits является интернет-магазином по реализации сувенирной продукции, а именно декоративных магнитов алкогольной тематики и не продает спиртные напитки и алкоголь. Приобретая магниты алкогольной тематики, вы получаете выбранные вами алкогольные напитки бесплатно, в качестве подарка к сувениру! Весь представленный в каталоге алкоголь предназначен исключительно для ознакомительных целей и не является товаром. Оформляя заказ, вы подтверждаете, что ознакомлены с вышеизложенной информацией. Данный ресурс не предлагает публичную оферту, определенную положениями статьи 437 Гражданского кодекса РФ. Доставка алкоголя от NightSpirits.
+    .footer__copyright
+        .container
+            .row
+                div(class='col-lg-7 col-md-7 col-sm-7 col-xs-12 ').
+                    Copyright © 2018 - All rights reserved. Powered by TivaTheme.
+                div(class='col-lg-5 col-md-5 col-sm-5 col-xs-12 align-right')
+                    img(src='img/payment.png')
+
