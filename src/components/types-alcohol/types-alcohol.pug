@@ -67,6 +67,8 @@ mixin types-alcohol()
     section.types-alcohol
         .container
             .row
+                .col-md-12.text-center.types-alcohol__header Our <span>Products</span>
+            .row
                - for (let item of images)
                     +alcohol-item({
                       title: item.title,
