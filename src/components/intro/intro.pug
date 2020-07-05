@@ -1,0 +1,20 @@
+include intro-item/intro-item
+mixin intro()
+    section.intro
+        .container
+            .row
+                .col-lg-12.col-md-12.text-center
+                    .intro__header
+                        h3 Why Choose Us
+                        p.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua. Ut enim ad minim veniam quis nostrud
+                        .intro__social тут будут иконки
+                div(class='col-lg-6 col-md-6 col-sm-6 top-left text-center')
+                    +intro-item({text: 'hello', title: 'Always Fresh', img: 'img/intro-icon-1.png', classes: ''})
+                div(class='col-lg-6 col-md-6 col-sm-6 top-right text-center')
+                    +intro-item({text: 'hello', title: '100% Natural', img: 'img/intro-icon-2.png', classes: 'intro__item_two'})
+                div(class='col-lg-6 col-md-6 col-sm-6 bottom-left text-center')
+                    +intro-item({text: 'hello', title: 'Super Healthy', img: 'img/intro-icon-3.png', classes: 'intro__item_three'})
+                div(class='col-lg-6 col-md-6 col-sm-6 bottom-right text-center')
+                    +intro-item({text: 'hello', title: 'Premium Quality', img: 'img/intro-icon-4.png', classes: 'intro__item_four'})

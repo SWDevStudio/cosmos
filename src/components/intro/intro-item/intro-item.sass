@@ -1,0 +1,21 @@
+.intro__item
+  margin: 0 auto
+  max-width: 300px
+  //display: flex
+  //flex-direction: column
+  //align-items: center
+  h4
+    color: $header__color-text
+    //color: red
+  p
+    color: $background_sub
+  &_three
+    margin-left: 52.5pt
+  &_four
+    margin-right: 52.5pt
+
+@media screen and (max-width: 1023px)
+  .intro__item
+    &_three,     &_four
+      margin: auto
+
