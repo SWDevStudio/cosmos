@@ -1,7 +1,7 @@
 mixin list(options)
     - options.list = options.list ? options.list : [{text: ''}]
     ul(class=options.classes).list
-        - for (item of options.list)
+        - for (el of options.list)
             li
-                a(href=item.link)=item.text
+                a(href=el.link)=el.text
 
