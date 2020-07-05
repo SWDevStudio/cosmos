@@ -1,3 +1,10 @@
 include catalog-item/catalog-item
 mixin catalog()
-    +catalog-item
+     section.catalog
+        div.container
+            div.row
+                +catalog-item({
+                  title: 'Нужное',
+                  img: 'img/zakuski-soki.png',
+                  href: '#'
+                })
