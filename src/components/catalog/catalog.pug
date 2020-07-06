@@ -3,8 +3,11 @@ mixin catalog()
      section.catalog
         div.container
             div.row
-                +catalog-item({
-                  title: 'Нужное',
-                  img: 'img/zakuski-soki.png',
-                  href: '#'
-                })
+                - for (let i in [1,1,1,1,1,1])
+                    +catalog-item({
+                      title: 'Good Buhlo',
+                      price: '$90.00',
+                      img: 'img/zakuski-soki.png',
+                      href: '#'
+                    })
+

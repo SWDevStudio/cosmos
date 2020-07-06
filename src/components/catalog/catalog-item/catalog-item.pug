@@ -1,6 +1,17 @@
+include ../../buy-button/buy-button
 mixin catalog-item(options)
-    div.col-12.col-sm-6.col-md-3.catalog-item
-        a(href=options.href)
-            div.alcohol-item__img
-                img(src=options.img)
-            div.alcohol-item__name.text-center=options.title
+    div.col-12.col-sm-6.col-md-3.catalog-item(class=options.classes).text-center
+        div.catalog-item__container
+            div.catalog-item__img
+                img(src='img/baileys.png')
+            div.catalog-item__title=options.title
+            div.catalog-item__price=options.price
+            +buy-button({
+              onClick: true
+            })
+            div или
+            +buy-button({
+              onClick: false,
+              classes: 'catalog-item__button'
+            })
+
