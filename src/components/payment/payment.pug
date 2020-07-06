@@ -1,0 +1,33 @@
+include payment-item/payment-item
+-
+    var items = [
+        {
+            title: 'Free Shipping item',
+            text: 'Proin gravida nibh vel velit auctor aliquet. Aenean lorem quis bibendum auctor',
+            img: 'payment-1.png'
+        },
+        {
+            title: 'Secured Payment',
+            text: 'Proin gravida nibh vel velit auctor aliquet. Aenean lorem quis bibendum auctor',
+            img: 'payment-2.png'
+        },
+        {
+            title: 'Money Back Guarantee',
+            text: 'Proin gravida nibh vel velit auctor aliquet. Aenean lorem quis bibendum auctor',
+            img: 'payment-3.png'
+        },
+        {
+            title: 'Express Shipping',
+            text: 'Proin gravida nibh vel velit auctor aliquet. Aenean lorem quis bibendum auctor',
+            img: 'payment-4.png'
+        }
+    ]
+mixin payment()
+    .container
+        .row.payment
+            - for (let item of items)
+                +payment-item({
+                  title: item.title,
+                  text: item.text,
+                  img: 'img/' + item.img
+                })
