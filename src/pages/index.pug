@@ -1,6 +1,13 @@
 extends base/base
 block content
     +header
+    +bread-crumbs({
+      class: 'hello',
+      crumbs: [
+          {text: 'hello', href: '#'},
+        {text: 'hello', href: '#'},
+          ]
+    })
     +types-alcohol
     +intro
     +footer
