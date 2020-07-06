@@ -1,15 +1,15 @@
 include ../../buy-button/buy-button
 mixin catalog-item(options)
-    div.col-12.col-sm-6.col-md-3.catalog-item(class=options.classes).text-center
+    div.col-12.col-sm-6.col-md-4.col-lg-3.catalog-item(class=options.classes).text-center
         div.catalog-item__container
             div.catalog-item__img
-                img(src='img/baileys.png')
+                img(src='img/baileys.png').img-fluid
             div.catalog-item__title=options.title
             div.catalog-item__price=options.price
             +buy-button({
               onClick: true
             })
-            div или
+            div.catalog-item__or или
             +buy-button({
               onClick: false,
               classes: 'catalog-item__button'

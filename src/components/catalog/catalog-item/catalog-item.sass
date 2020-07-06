@@ -4,19 +4,27 @@
   &__container
     border: 2px solid #E3E0D3
     border-radius: 15px
+    padding: 0 15px
+    display: flex
+    flex-direction: column
+    height: 100%
+    justify-content: space-between
 
-  &__img
-    img
-      width: 100%
-      height: 100%
   &__title
+    display: flex
+    justify-content: center
+    align-items: center
     font-family: $title-font
     color: $header__color-text
     font-size: 14px
+    height: 63px
   &__price
     //font-family: "PlayfairDisplay-Regular", sans-serif
+    margin: 15px 0
     font-family: $title-font
     color: #78b144
     font-size: 18px
   &__button
     margin-bottom: 20px
+  &__or
+    margin: 10px 0
