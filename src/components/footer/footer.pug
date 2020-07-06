@@ -1,29 +1,28 @@
 include list/list
+-
+    var firstColumn = [
+        {text: 'Главная', link: 'http://google.com'},
+        {text: 'Каталог', link: '#'},
+        {text: 'Доставка и оплата', link: '#'},
+        {text: 'О нас', link: '#'},
+        {text: 'Контакты', link: '#'},
+
+    ]
+    var secondColumn = [
+        {text: 'Виски', link: '#'},
+        {text: 'Водка', link: '#'},
+        {text: 'Пиво', link: '#'},
+        {text: 'Вино', link: '#'},
+        {text: 'Коньяк', link: '#'},
+    ]
+    var thirdColumn = [
+        {text: 'Ром', link: '#'},
+        {text: 'Шампанское', link: '#'},
+        {text: 'Вермут', link: '#'},
+        {text: 'Текила', link: '#'},
+        {text: 'Ликер', link: '#'},
+    ]
 mixin footer()
-    -
-        var firstColumn = [
-            {text: 'Главная', link: 'http://google.com'},
-            {text: 'Каталог', link: '#'},
-            {text: 'Доставка и оплата', link: '#'},
-            {text: 'О нас', link: '#'},
-            {text: 'Контакты', link: '#'},
-
-        ]
-        var secondColumn = [
-            {text: 'Виски', link: '#'},
-            {text: 'Водка', link: '#'},
-            {text: 'Пиво', link: '#'},
-            {text: 'Вино', link: '#'},
-            {text: 'Коньяк', link: '#'},
-        ]
-        var thirdColumn = [
-            {text: 'Ром', link: '#'},
-            {text: 'Шампанское', link: '#'},
-            {text: 'Вермут', link: '#'},
-            {text: 'Текила', link: '#'},
-            {text: 'Ликер', link: '#'},
-        ]
-
     footer#footer
         .footer
             .container
