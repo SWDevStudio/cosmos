@@ -7,11 +7,11 @@ mixin catalog-item(options)
             div.catalog-item__title=options.title
             div.catalog-item__price=options.price
             +buy-button({
-              onClick: true
+              oneClick: true
             })
             div.catalog-item__or или
             +buy-button({
-              onClick: false,
+              oneClick: false,
               classes: 'catalog-item__button'
             })
 
