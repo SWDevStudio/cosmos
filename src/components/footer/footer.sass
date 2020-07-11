@@ -3,17 +3,24 @@
   background: $footer__background
   color: $footer__color-text
   position: relative
+  &__info
+    font-size: $fs__text
   &__contacts
     font-family: $font
-    font-size: $fs__footer-title
+    font-size: $fs__text
   &__rule
     font-family: $title-font
-    font-size: 25px
+    font-size: $fs__footer-title
+    margin: 15px 0
+    text-transform: uppercase
   &__copyright
     background: #ffffff
     margin: 15px 0
     &-text
-      margin-bottom: 15px
+
+      font-family: $font
+      font-size: $fs__text
+      color: $background_sub
     &-img
       img
         max-width: 225px
