@@ -39,12 +39,12 @@
     "typescript": "^3.8.2",
     "webpack": "^4.41.6",
     "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.10.3",
+    "webpack-dev-server": "^3.11.0",
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
     "bootstrap": "^4.5.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.1",
     "owl.carousel": "^2.3.4"
   }
 }
