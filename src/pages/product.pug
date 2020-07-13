@@ -1,7 +1,15 @@
 extends base/base
 block content
     +header()
+    +bread-crumbs({
+        crumbs: [
+            {link: '#', text: 'Главная'},
+            {link: '#', text: 'Каталог'},
+            {link: '#', text: 'Водка'},
+            {link: '#', text: 'Водка Absolut 1L'},
+        ]
+    })
     +product-information({
-        heading: 'Класс'
+        heading: 'Водка абсолют'
     })
     +footer()
