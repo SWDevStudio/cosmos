@@ -3,6 +3,9 @@ mixin catalog()
      section.catalog
         div.container
             div.row
+                div.col-lg-12.text-center.catalog__title
+                    h1 Бухлишко
+            div.row
                 - for (let i in [1,1,1,1,1,1])
                     +catalog-item({
                       title: 'Good  Buhlo Good Buhlo Good Buhlo Good Buhlo Good Buhlo Good Buhlo Good Buhlo ',
