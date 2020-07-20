@@ -27,17 +27,17 @@ mixin footer()
         .footer
             .container
                 .row
-                    .col-md-3
+                    .col-md-3.px-0
                         +list({
                           classes: 'footer__list text-center text-md-left',
                           list: firstColumn
                         })
-                    .col-md-3
+                    .col-md-3.px-0
                         +list({
                           classes: 'footer__list text-center text-md-left',
                           list: secondColumn
                         })
-                    .col-md-3
+                    .col-md-3.px-0
                         +list({
                           classes: 'footer__list text-center text-md-left',
                           list: thirdColumn
@@ -54,10 +54,10 @@ mixin footer()
         .footer__copyright
             .container
                 .row
-                    div(class='col-lg-7 col-md-7 col-sm-7 col-xs-12 text-lg-left text-center d-flex').flex-column.justify-content-center
-                        .footer__copyright-text.
+                    div(class='col-lg-7 col-md-7 col-sm-7 col-xs-12 text-lg-left text-center d-flex px-0').flex-column.justify-content-center
+                        .footer__copyright-text
                             Copyright © 2018 - All rights reserved. Powered by TivaTheme.
-                    div(class='col-lg-5 col-md-5 col-sm-5 col-xs-12 text-lg-right text-center')
+                    div(class='col-lg-5 col-md-5 col-sm-5 col-xs-12 text-lg-right text-center px-0')
                         div.footer__copyright-img
                             img(src='img/payment.png')
 
